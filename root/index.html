@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css-signup.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <title> Sign-up Form </title>
+</head>
+
+<body>
+
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1> Unique solutions for Unique Business requirements </h1>
+                <p> <b> With a team of over 100 world-class industry experts </b></p>
+            </section>
+
+        </div>
+        <div class="right">
+            <form action="#" method="post">
+                <section class="copy">
+                    <h2> Sign Up</h2>
+                    <div class="login-container">
+                        <p>Already have an account?
+                            <a href="index.html"> <strong> Log In </strong></a>
+                        </p>
+                    </div>
+                </section>
+                <div class="input-container name">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <label for="fname"> Full Name </label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="input-container email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                    <label for="fname"> Email </label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input-container password">
+                    <label for="passwd"> Password </label>
+                    <input style="text-indent: 0px;" type="password" id="password" name="password" placeholder="Please use Alpha-numeric combinations">
+                    <i class="material-icons visibility" id="hide" title="hide password" onclick="myFunction()"> visibility_off </i>
+                    <i class="material-icons visibility" id="show" title="show password" onclick="myFunction()"> visibility </i>
+                </div>
+                <div class="input-container cta">
+
+                    <label for="email-update" class="checkbox-container">Sign up for Email updates? &nbsp; </label>
+                    <input type="checkbox" class="email-update"> </input>
+
+
+
+                </div>
+                <button class="signup-btn" type="submit" value="submit" onclick="#"> Sign Up </button>
+                <br>
+                <section class="platforms-text">
+                    <p>
+                        <center> Or Sign up using social platforms: </center>
+                    </p>
+                </section>
+                <section class="platforms-icons">
+                    <center>
+                        <span style="height: 20px; width: 20px;">  <a href="#"> <img  src="facebook.png" alt="facebook-logo"> </a> </span>
+                        <span> <a href="#"> <img src="gmail.png" alt="gmail-logo"> </a> </span>
+                        <span style="height: 20px; width: 20px;"> <a href="#"> <img src="instagram.png" alt="instagram-logo"> </a> </span>
+                        <span style="height: 20px; width: 20px;"> <a href="#"> <img src="twitter.png" alt="twitter-logo"> </a> </span>
+                    </center>
+                </section>
+
+
+
+
+
+
+
+
+                <section class="legal copy">
+                    <p class="small"> By Signing Up, you agreee to accept our <a href="#"> Privacy Policy</a> &amp; <a href="#"> Terms of Service</a> </p>
+                </section>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function myFunction() {
+
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById('hide').style.display = "inline-block";
+                document.getElementById('show').style.display = "none";
+            } else {
+                x.type = "password";
+                document.getElementById('hide').style.display = "none";
+                document.getElementById('show').style.display = "inline-block";
+            }
+        }
+    </script>
+</body>
+
+</html>
